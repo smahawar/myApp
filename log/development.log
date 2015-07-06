@@ -857,3 +857,14 @@ Started GET "/sign_up" for 127.0.0.1 at 2015-07-02 19:27:36 +0530
 Processing by UsersController#new as HTML
   Rendered users/new.html.erb within layouts/application (1.6ms)
 Completed 200 OK in 25ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-06 11:44:05 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (31.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (209.6ms)
+Completed 200 OK in 959ms (Views: 800.4ms | ActiveRecord: 93.3ms)
+
+
+Started GET "/api/v1/data" for 127.0.0.1 at 2015-07-06 11:44:13 +0530
+  [1m[35mMyData Load (25.7ms)[0m  SELECT "my_data".* FROM "my_data"
